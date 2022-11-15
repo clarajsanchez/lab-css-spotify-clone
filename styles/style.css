@@ -21,7 +21,7 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
-    background: white;
+    background: #fff;
 }
 
 .miniLogo{
@@ -48,13 +48,15 @@ header{
 }
 
 #sec1 h1{
-    font-size: 50px;
+    font-size: 60px;
+    text-align: center;
 }
 
 #sec1 p{
-    width: 400px;
+    width: 540px;
     margin-top: -20px;
     text-align: center;
+    font-size: 23px;
 }
 
 
@@ -66,19 +68,121 @@ header{
 }
 
 #sec2 img{
-    width: 50px;
+    width: 90px;
 }
 
 #sec2 h4{
     align-self: center;
+    font-size: 30px;
 }
 
-.container{
+#sec2 .container{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.container p{
-    width: 190px;
+#sec2 .container p{
+    width: 180px;
+    color: #1A1A1A;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#sec2 h5{
+    color: #00B172;
+    font-size: 22px;
+    margin: 8px;
+}
+
+/* SECTION 3 */
+
+#sec3{
+    background-color: #00B172;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+#sec3 .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#sec3 img:first-of-type{
+    width: 100px;
+}
+
+#sec3 img:last-of-type{
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+#sec3 .container{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+#sec3 h2{
+    font-size: 30px;
+    width: 415px;
+}
+
+#sec3 h3{
+    font-size: 27px;
+}
+
+hr{
+    width: 400px;
+    margin-top: -15px;
+    border: 2px solid #fff;
+    background-color: #fff;
+}
+
+#sec3 p{
+    font-size: 22px;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 750px){
+    #sec2 .container{
+        display: flex;
+        flex-direction: column;
+    }
+    #sec3 img:last-of-type{
+        display: none;
+    }
+    #sec3 .container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    header{
+        flex-direction: column;
+    }
+    header .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #sec3 .box{
+        flex-direction: column;
+    }
+    #sec3 img:first-of-type{
+        margin-bottom: 15px;
+    }
+    #sec3 .container{
+        width: 80%;
+    }
 }
